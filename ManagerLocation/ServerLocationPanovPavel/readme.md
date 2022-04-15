@@ -49,6 +49,40 @@ create table location(
     FOREIGN KEY (id_equipment)  REFERENCES location_db.equipment(id)
     
 );
+INSERT INTO location_db.times (time_start, time_end)
+VALUES ('2022-04-15 03:57:38', '2022-04-16 03:57:40');
+
+INSERT INTO location_db.times (time_start, time_end)
+VALUES ('2022-04-16 03:57:44', '2022-04-17 03:57:47');
+
+INSERT INTO location_db.times (time_start, time_end)
+VALUES ('2022-04-17 03:57:54', '2022-04-18 03:57:57');
+
+INSERT INTO location_db.times (time_start, time_end)
+VALUES ('2022-04-18 03:58:01', '2022-04-19 03:58:03');
+
+INSERT INTO location_db.times (time_start, time_end)
+VALUES ('2022-04-20 03:58:07', '2022-04-21 03:58:10');
+
+INSERT INTO location_db.location (id_time, name, description)
+VALUES (1, '103', 'актовый');
+
+INSERT INTO location_db.location (id_time, name, description)
+VALUES (2, '104', 'спортзал');
+
+INSERT INTO location_db.location (id_time, name, description)
+VALUES (3, '105', 'аудитория');
+
+
+INSERT INTO location_db.equipment (id_location, name, description, conditions)
+VALUES (1, 'Компьюетер', 'Хорошое состояние', 'Чёрный');
+
+INSERT INTO location_db.equipment (id_location, name, description, conditions)
+VALUES (1, 'Монитор', null, 'Белый');
+
+INSERT INTO location_db.equipment (id_location, name, description, conditions)
+VALUES (2, 'Принтер', null, null);
+
 ```
 ## API сервиса
 
